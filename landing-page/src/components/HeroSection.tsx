@@ -35,7 +35,7 @@ function HeroSection() {
                     className="-top-40 left-0 md:left-60 md:-top-20"
                     fill="white"
                 />
-                <div className="p-4 flex flex-col items-center justify-center text-center space-y-0  w-full" >
+                <div className="h-[90vh] p-4 flex flex-col items-center justify-center text-center space-y-0  w-full" >
 
 
 
@@ -43,18 +43,25 @@ function HeroSection() {
                         words={"Hello,"} />
 
                     <TextGenerateEffect className=" md:mt-0 text-4xl md:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400"
-                        words={"I'm Yash GHarat"} />
+                        words={"I'm Yash Gharat"} />
 
                     <TextGenerateEffect className="md:mt-0 text-4xl md:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400" words={"A passionate  Developer"} />;
                     <div className="mt-4">
-                        <Link href={"/courses"}>
-
+                        <Link href={"/"}>
+                            <button className="inline-flex h-12 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
+                                RESUME
+                            </button>
                         </Link>
                     </div>
                 </div>
+
+                <div className="bg-gradient-to-r from-transparent via-indigo-500 dark:via-sky-700 to-sky-500 mb-1 h-[4px] w-[70%]" />
             </div>
         </div>
 
     </>)
 }
-export default HeroSection
+export default HeroSection;
+
+
+
