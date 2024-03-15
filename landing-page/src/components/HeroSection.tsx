@@ -2,27 +2,12 @@ import Link from "next/link";
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/text-generate-effect";
 import { TypewriterEffectSmooth } from "./ui/typewriter-effect";
+import { Button } from "./ui/moving-border";
 
 
 
 function HeroSection() {
-    const word = [
-        {
-            text: "Build",
-        },
-        {
-            text: "awesome",
-        },
-        {
-            text: "apps",
-        },
-        {
-            text: "with",
-        },
-        {
-            text: "Aceternity.",
-        },
-    ]
+
     return (<>
         <div className="h-full w-full dark:bg-black bg-white  dark:bg-grid-white/[0.2] bg-grid-black/[0.2] relative flex items-center justify-center">
             {/* Radial gradient for the container to give a faded look */}
@@ -47,10 +32,11 @@ function HeroSection() {
 
                     <TextGenerateEffect className="md:mt-0 text-4xl md:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400" words={"A passionate  Developer"} />;
                     <div className="mt-4">
-                        <Link href={"/"}>
-                            <button className="inline-flex h-12 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
+                        <Link href={"https://drive.google.com/file/d/15l38Pk5HDFgQa-ipN4kpXle3EO3ssyXp/view"} target="_blank">
+                            <Button borderRadius="1.75rem"
+                                className="bg-white dark:bg-black text-black dark:text-white border-neutral-200 dark:border-slate-800">
                                 RESUME
-                            </button>
+                            </Button>
                         </Link>
                     </div>
                 </div>
