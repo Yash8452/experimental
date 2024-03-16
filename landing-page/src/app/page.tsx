@@ -5,25 +5,23 @@ import HeroSection from "@/components/HeroSection";
 import ProjectSection from "@/components/ProjectSection";
 import SkillSection from "@/components/SkillSection";
 import { TracingBeam } from "@/components/ui/tracing-beam";
+import { twMerge } from "tailwind-merge";
 
 export default function Home() {
-  return (<>
+  return (
+    <>
+      <TracingBeam className="bg-black px-6">
+      <div className="max-w-full antialiased pt-4 relative">
+          <HeroSection />
+          <AboutSection />
+          <ProjectSection />
+          <SkillSection />
+          <ContactSection />
+          <Footer />
+        </div>
+      </TracingBeam>
 
-    <TracingBeam className="" >
-      <main className="h-screen antialiased">
-        <HeroSection />
+    </>
 
-        <AboutSection />
-
-        <ProjectSection />
-
-        <SkillSection />
-        <ContactSection />
-
-        <Footer />
-
-      </main >
-    </TracingBeam>
-  </>
   );
 }

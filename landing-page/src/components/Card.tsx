@@ -4,6 +4,7 @@ import { PinContainer } from './ui/3d-pin'
 function Card() {
     return (
         <>
+
             <PinContainer className=""
                 title="/ui.aceternity.com"
                 href="https://twitter.com/mannupaaji"
@@ -20,6 +21,7 @@ function Card() {
                     <div className="flex flex-1 w-full rounded-lg mt-4 bg-gradient-to-br from-violet-500 via-purple-500 to-blue-500" />
                 </div>
             </PinContainer>
+
 
         </>
     )

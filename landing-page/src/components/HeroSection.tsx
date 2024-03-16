@@ -1,15 +1,25 @@
 import Link from "next/link";
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/text-generate-effect";
-import { TypewriterEffectSmooth } from "./ui/typewriter-effect";
+import { TypewriterEffect, TypewriterEffectSmooth } from "./ui/typewriter-effect";
 import { Button } from "./ui/moving-border";
 
 
 
 function HeroSection() {
+    const words = [
+
+        {
+            text: "I,m"
+        },
+        {
+            text: "Yash_Gharat",
+            className: "text-blue-500 dark:text-blue-500",
+        },
+    ];
 
     return (<>
-        <div className="h-full w-full dark:bg-black bg-white  dark:bg-grid-white/[0.2] bg-grid-black/[0.2] relative flex items-center justify-center">
+        <div className="h-[100vh] w-full dark:bg-black bg-white  dark:bg-grid-white/[0.2] bg-grid-black/[0.2] relative flex items-center justify-center">
             {/* Radial gradient for the container to give a faded look */}
             <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
 
@@ -24,13 +34,13 @@ function HeroSection() {
 
 
 
-                    <TextGenerateEffect className=" md:mt-0 text-4xl md:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400"
+                    <TextGenerateEffect className=" md:mt-0 text-4xl md:text-7xl bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400"
                         words={"Hello,"} />
 
-                    <TextGenerateEffect className=" md:mt-0 text-4xl md:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400"
-                        words={"I'm Yash Gharat"} />
+                    <TypewriterEffect className=" md:mt-0 text-4xl md:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400"
+                        words={words} />
 
-                    <TextGenerateEffect className="md:mt-0 text-4xl md:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400" words={"A passionate  Developer"} />;
+                    <TextGenerateEffect className="md:mt-0 text-4xl md:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400" words={"WEB DEVELOPER"} />;
                     <div className="mt-4">
                         <Link href={"https://drive.google.com/file/d/15l38Pk5HDFgQa-ipN4kpXle3EO3ssyXp/view"} target="_blank">
                             <Button borderRadius="1.75rem"

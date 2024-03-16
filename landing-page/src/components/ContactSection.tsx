@@ -6,6 +6,7 @@ import { cn } from "@/utils/cn";
 import {
     IconSend,
 } from "@tabler/icons-react";
+import { Button, MovingBorder } from "./ui/moving-border";
 
 function ContactSection() {
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
@@ -14,7 +15,7 @@ function ContactSection() {
     };
     return (
         <>
-            <div className="h-full w-full dark:bg-black bg-white  dark:bg-grid-white/[0.2] bg-grid-black/[0.2] relative flex items-center justify-center">
+            <div className="h-[100vh] w-full dark:bg-black bg-white  dark:bg-grid-white/[0.2] bg-grid-black/[0.2] relative flex items-center justify-center">
                 {/* Radial gradient for the container to give a faded look */}
                 <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
 
@@ -45,14 +46,17 @@ function ContactSection() {
                             <Label htmlFor="message">Message</Label>
                             <Input className="h-[5rem]" id="message" placeholder="Let your words dance in this box..." type="text" />
                         </div>
-            
-                        <button
-                            className="flex items-center justify-center gap-2 bg-gradient-to-br relative group/btn from-black dark:from-zinc-900 dark:to-zinc-900 to-neutral-600 block dark:bg-zinc-800 w-full text-white rounded-md h-10 font-medium shadow-[0px_1px_0px_0px_#ffffff40_inset,0px_-1px_0px_0px_#ffffff40_inset] dark:shadow-[0px_1px_0px_0px_var(--zinc-800)_inset,0px_-1px_0px_0px_var(--zinc-800)_inset]"
-                            type="submit"
-                        >
-                            Send <IconSend size={16}/>
+                        <div className="flex justify-center md:justify-center">
 
-                        </button>
+                            <Button
+                                className="bg-black"
+                                type="submit"
+                            >
+
+                                Send
+
+                            </Button>
+                        </div>
 
                         <div className="bg-gradient-to-r from-transparent via-indigo-500 dark:via-sky-700 to-sky-500 my-8 h-[2.5px] w-full" />
                     </form>
