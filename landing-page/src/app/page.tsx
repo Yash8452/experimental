@@ -10,16 +10,16 @@ import { twMerge } from "tailwind-merge";
 export default function Home() {
   return (
     <>
-      <TracingBeam className="bg-black px-6">
-      <div className="max-w-full antialiased pt-4 relative">
-          <HeroSection />
-          <AboutSection />
-          <ProjectSection />
-          <SkillSection />
-          <ContactSection />
-          <Footer />
-        </div>
-      </TracingBeam>
+      {/* <TracingBeam className="bg-black px-4">
+        <div className=" relative"> */}
+      <HeroSection />
+      <AboutSection />
+      <SkillSection />
+      <ProjectSection />
+      <ContactSection />
+      <Footer />
+      {/* </div>
+      </TracingBeam> */}
 
     </>
 

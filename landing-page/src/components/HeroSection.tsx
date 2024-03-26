@@ -19,18 +19,14 @@ function HeroSection() {
     ];
 
     return (<>
-        <div className="h-[100vh] w-full dark:bg-black bg-white  dark:bg-grid-white/[0.2] bg-grid-black/[0.2] relative flex items-center justify-center">
+        <div className="h-[100vh] max-w-full dark:bg-black bg-white  dark:bg-grid-white/[0.2] bg-grid-black/[0.2] relative flex items-center justify-center">
             {/* Radial gradient for the container to give a faded look */}
             <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
 
             <div
                 className="h-[100vh] w-full rounded-md flex flex-col items-center justify-center relative overflow-hidden mx-auto py-10 md:py-0"
             >
-                <Spotlight
-                    className="-top-40 left-0 md:left-60 md:-top-20"
-                    fill="white"
-                />
-                <div className="h-[90vh] p-4 flex flex-col items-center justify-center text-center space-y-0  w-full" >
+                <div className="h-[90vh] flex flex-col items-center justify-center text-center space-y-0  w-full" >
 
 
 
@@ -40,7 +36,7 @@ function HeroSection() {
                     <TypewriterEffect className=" md:mt-0 text-4xl md:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400"
                         words={words} />
 
-                    <TextGenerateEffect className="md:mt-0 text-4xl md:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400" words={"WEB DEVELOPER"} />;
+                    <TextGenerateEffect className="md:mt-0 animate-pulse text-4xl md:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400" words={"WEB DEVELOPER"} />;
                     <div className="mt-4">
                         <Link href={"https://drive.google.com/file/d/15l38Pk5HDFgQa-ipN4kpXle3EO3ssyXp/view"} target="_blank">
                             <Button borderRadius="1.75rem"
